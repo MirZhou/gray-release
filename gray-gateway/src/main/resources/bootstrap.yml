@@ -1,8 +1,16 @@
+nacos:
+  server-addr: host.docker.internal:8848
+  namespace: development
+
 spring:
   application:
     name: gray-gateway
   cloud:
     nacos:
+      config:
+        file-extension: yaml
+        server-addr: ${nacos.server-addr}
+        namespace: ${nacos.namespace}
       discovery:
-        server-addr: host.docker.internal:8848
-        namespace: development
+        server-addr: ${nacos.server-addr}
+        namespace: ${nacos.namespace}
