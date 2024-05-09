@@ -16,6 +16,7 @@
 	<description>Demo project for Spring Boot</description>
 	<modules>
 		<module>gray-gateway</module>
+		<module>micro-app</module>
 	</modules>
 	<properties>
 		<revision>0.0.1-SNAPSHOT</revision>
