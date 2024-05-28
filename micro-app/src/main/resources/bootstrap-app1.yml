@@ -1,3 +1,10 @@
 server:
   port: 8090
   name: PRODUCTION
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        metadata:
+          version: 1.0

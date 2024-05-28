@@ -1,3 +1,10 @@
 server:
   port: 8091
   name: GRAY
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        metadata:
+          version: 2.0
